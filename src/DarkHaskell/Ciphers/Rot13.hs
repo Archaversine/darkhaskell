@@ -1,6 +1,6 @@
 module DarkHaskell.Ciphers.Rot13 where
 
-import Data.Char (isLetter)
+import Data.Char (isLetter, isAscii)
 
 -- | Shift a character, respecting case
 --
@@ -9,8 +9,8 @@ shiftChar :: Char -> Char
 shiftChar 'z' = 'a'
 shiftChar 'Z' = 'A'
 shiftChar c 
-    | isLetter c = succ c
-    | otherwise  = c
+    | isLetter c && isAscii c = succ c
+    | otherwise = c
 
 -- | Same as @shiftChar@, but can repeat @n@ times.
 shiftCharBy :: Int -> Char -> Char

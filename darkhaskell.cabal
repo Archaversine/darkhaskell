@@ -60,9 +60,10 @@ library
 
     -- Modules exported by the library.
     exposed-modules:  DarkHaskell
+                      DarkHaskell.Ciphers.Rot13
 
     -- Modules included in this library but not exported.
-    other-modules:    DarkHaskell.Ciphers.Rot13
+    -- other-modules:    
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -84,7 +85,7 @@ test-suite darkhaskell-test
     default-language: GHC2024
 
     -- Modules included in this executable, other than Main.
-    -- other-modules:
+    other-modules:    DarkTest.Ciphers.Rot13
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
@@ -101,4 +102,5 @@ test-suite darkhaskell-test
     -- Test dependencies.
     build-depends:
         base ^>=4.20.2.0,
+        QuickCheck,
         darkhaskell
