@@ -62,7 +62,7 @@ library
     exposed-modules:  DarkHaskell
 
     -- Modules included in this library but not exported.
-    -- other-modules:
+    other-modules:    DarkHaskell.Ciphers.Rot13
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
