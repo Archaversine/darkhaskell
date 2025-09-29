@@ -73,7 +73,7 @@ Level 4 | Data analysis, payloads and more networking | Example
 [51] | Payload that starts as a daemon | :x:
 [52] | Payload that retrieves browser information | :x:
 [53] | Link generator | :x:
-[54] | ASCII Name generator [ just for fun :) ]  | :x:
+[54] | ASCII Name generator [ just for fun :) ]  | :heavy_checkmark:
 [55] | Full chat server with private messages, file and image transfer | :x:
 [56] | Simple firewall | :x:
 [57] | Gateway | :x:
